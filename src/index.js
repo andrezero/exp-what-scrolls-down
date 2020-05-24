@@ -123,17 +123,6 @@ function main() {
       y: frameSize.h / 2,
     }
     ratio = size.h / naturalSize.h;
-
-    if (window.top === window) {
-      return;
-    }
-
-    const height = document.documentElement.scrollHeight;
-    const available = document.documentElement.clientHeight;
-    const required = document.body.clientHeight;
-    if (required > available || height > required) {
-      window.parent.postMessage({ height: required }, '*');
-    }
   }
 
   function sample(pos) {
