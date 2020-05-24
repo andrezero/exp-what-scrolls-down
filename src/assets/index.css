@@ -27,7 +27,7 @@ h2 {
 
 @font-face {
   font-family: medusa;
-  src: url("/assets/medusa.ttf");
+  src: url("medusa.ttf");
 }
 
 body {
